@@ -17,7 +17,7 @@ DROP TABLE IF EXISTS titles;
 -- 2. Tables are created from SQL file from ERD site
 CREATE TABLE "employees" (
     "emp_no" INT   NOT NULL,
-    "emp_title_id" INT   NOT NULL,
+    "emp_title_id" VARCHAR(10)  NOT NULL,
     "birth_date" DATE   NOT NULL,
     "first_name" VARCHAR(50)   NOT NULL,
     "last_name" VARCHAR(50)   NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "departments" (
-    "dept_no" INT   NOT NULL,
+    "dept_no" VARCHAR(10)   NOT NULL,
     "dept_name" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
         "dept_no"
@@ -38,14 +38,14 @@ CREATE TABLE "departments" (
 
 CREATE TABLE "dpt_employees" (
     "emp_no" INT   NOT NULL,
-    "dept_no" INT   NOT NULL,
+    "dept_no" VARCHAR(10)   NOT NULL,
     CONSTRAINT "pk_dpt_employees" PRIMARY KEY (
         "emp_no","dept_no"
      )
 );
 
 CREATE TABLE "dpt_managers" (
-    "dept_no" INT   NOT NULL,
+    "dept_no" VARCHAR(10)   NOT NULL,
     "emp_no" INT   NOT NULL,
     CONSTRAINT "pk_dpt_managers" PRIMARY KEY (
         "dept_no","emp_no"
@@ -61,7 +61,7 @@ CREATE TABLE "salaries" (
 );
 
 CREATE TABLE "titles" (
-    "title_id" INT   NOT NULL,
+    "title_id" VARCHAR(10)  NOT NULL,
     "title" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_titles" PRIMARY KEY (
         "title_id"
