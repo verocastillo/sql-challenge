@@ -15,12 +15,19 @@ SELECT * FROM titles;
 -- 1. List employee number, last name, first name, sex, and salary.
 SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
-INNER JOIN salaries ON employees.emp_no = salaries.emp_no
+INNER JOIN salaries ON employees.emp_no = salaries.emp_no;
 
 -- 2. List first name, last name, and hire date for employees hired in 1986.
+SELECT first_name, last_name, hire_date
+FROM employees
+WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
 
 -- 3. List the manager of each department with department number, name, the 
 --    manager's employee number, last name, first name.
+SELECT dpt_managers.dept_no, departments.dept_name, dpt_managers.emp_no, employees.last_name, employees.first_name
+FROM dpt_managers
+INNER JOIN departments ON departments.dept_no = dpt_managers.dept_no
+INNER JOIN employees ON employees.emp_no = dpt_managers.emp_no;
 
 -- 4. List the department of each employee with employee number, last name, 
 --    first name, and department name.
