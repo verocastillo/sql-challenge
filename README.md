@@ -38,6 +38,7 @@ The structure of the repository is simple: *EmployeeSQL* contains all of the req
   two worlds: jupyter and sql.
   
 **Results and Discussion**
+
 ![salaryhist](https://user-images.githubusercontent.com/77795761/119238176-99d4f380-bb06-11eb-8816-b6f9fb1e5872.png)
 
 Salaries, while having a big range of values, are not equally distributed, with almost half of all of the employees earning less than 50000 USD a year. 
@@ -49,10 +50,10 @@ Engineers are most affected by this, as even the Senior Engineers are earning th
 On a personal note, *do not underpay engineers*. You ought to keep your engineers happy if you want your product to work and be efficient. Your engineers are going to go on strike if their growth opportunities in the company yield almost no economic benefits.
 
 **Epilogue**
+
 My employee number is 499942, according to the epilogue. I wanted to see what's up with that.
 
 <img width="702" alt="epilogue-query" src="https://user-images.githubusercontent.com/77795761/119238220-d6a0ea80-bb06-11eb-869f-f0f4e19a33f6.png">
-
 
 Not only my name is April Foolsday (lol) but also, I have the lowest possible income in the company. Yikes.
 
