@@ -16,6 +16,7 @@ The structure of the repository is simple: *EmployeeSQL* contains all of the req
 1. Data Modeling
    
    In this part, an ERD was created based on the CSV files provided, to ease the Data Engineering section.
+   
    <img width="1367" alt="erd-png" src="https://user-images.githubusercontent.com/77795761/119238065-e7049580-bb05-11eb-85a5-8e28b6632de1.png">
 
 2. Data Engineering
@@ -27,6 +28,7 @@ The structure of the repository is simple: *EmployeeSQL* contains all of the req
 
   This part takes the tables created in the Data Engineering section, with the CSV files already imported. With this database ready, 
   several queries were ran to obtain employee information.
+  
   <img width="732" alt="query1" src="https://user-images.githubusercontent.com/77795761/119238139-5f6b5680-bb06-11eb-9df9-57b5a190618e.png">
 
 4. Bonus Analysis
@@ -37,16 +39,20 @@ The structure of the repository is simple: *EmployeeSQL* contains all of the req
   
 **Results and Discussion**
 ![salaryhist](https://user-images.githubusercontent.com/77795761/119238176-99d4f380-bb06-11eb-8816-b6f9fb1e5872.png)
+
 Salaries, while having a big range of values, are not equally distributed, with almost half of all of the employees earning less than 50000 USD a year. 
 
 ![avgsalary](https://user-images.githubusercontent.com/77795761/119238188-a8230f80-bb06-11eb-9b1f-ca7c33bf30ca.png)
+
 Engineers are most affected by this, as even the Senior Engineers are earning the same as the Assistant Engineers.
 
 On a personal note, *do not underpay engineers*. You ought to keep your engineers happy if you want your product to work and be efficient. Your engineers are going to go on strike if their growth opportunities in the company yield almost no economic benefits.
 
 **Epilogue**
 My employee number is 499942, according to the epilogue. I wanted to see what's up with that.
+
 <img width="702" alt="epilogue-query" src="https://user-images.githubusercontent.com/77795761/119238220-d6a0ea80-bb06-11eb-869f-f0f4e19a33f6.png">
+
 
 Not only my name is April Foolsday (lol) but also, I have the lowest possible income in the company. Yikes.
 
